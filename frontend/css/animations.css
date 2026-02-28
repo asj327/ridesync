@@ -1,0 +1,91 @@
+/* =========================================
+   SPA SCREEN TRANSITIONS
+   ========================================= */
+
+/* Hidden state for screens */
+.screen.hidden {
+    display: none !important;
+}
+
+/* Active state with a smooth slide-up fade */
+.screen.active {
+    display: block;
+    animation: slideUpFade 0.4s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   WAITING ROOM "RADAR" LOADER
+   ========================================= */
+
+.loader {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff; /* Primary brand blue */
+    border-radius: 100%;  
+    margin: 40px auto;
+    /* The radar pulse effect */
+    animation: radar-pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes radar-pulse {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* =========================================
+   MATCH SUCCESS BANNER POP
+   ========================================= */
+
+.success-banner {
+    background-color: #28a745; /* Success green */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    /* A satisfying "pop" animation when the match is found */
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Subtle pulse for the highlighted Pool Code */
+.highlight {
+    color: #007bff;
+    font-weight: 900;
+    animation: textPulse 2s infinite;
+}
+
+@keyframes textPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}

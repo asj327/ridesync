@@ -1,0 +1,275 @@
+/* =========================================
+   GLOBAL RESET & DARK THEME VARIABLES
+   ========================================= */
+:root {
+    --primary-color: #3b82f6;     /* Brighter blue for dark mode visibility */
+    --primary-hover: #2563eb;
+    --success-color: #22c55e;     /* Vibrant green for dark mode */
+    --bg-color: #121212;          /* Main app background */
+    --card-bg: #1e1e1e;           /* Slightly lighter for elevated cards */
+    --text-main: #e0e0e0;         /* Off-white text */
+    --text-muted: #9ca3af;        /* Gray text for secondary info */
+    --border-color: #333333;      /* Subtle dark borders */
+    --desktop-bg: #000000;        /* Pitch black background outside app on laptop */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--desktop-bg); 
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* =========================================
+   MOBILE-FIRST APP CONTAINER (Default)
+   ========================================= */
+#app-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+header {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: var(--primary-color); /* Make the title pop in blue */
+}
+
+header p {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+/* =========================================
+   MAIN CONTENT AREA
+   ========================================= */
+main {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px; 
+    background: var(--bg-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.screen h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+/* =========================================
+   FORMS & INPUTS
+   ========================================= */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+input[type="text"], 
+select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+/* Change placeholder color for dark mode */
+input::placeholder {
+    color: #6b7280;
+}
+
+input[type="text"]:focus, 
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    background-color: #2a2a2a; /* Slightly lighter on focus */
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 15px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--border-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--card-bg);
+    border-color: var(--text-muted);
+}
+
+/* =========================================
+   CARDS & LISTS
+   ========================================= */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--text-main);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+ul#passenger-list {
+    list-style: none;
+}
+
+ul#passenger-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+ul#passenger-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.total-fare {
+    font-size: 1.2rem;
+    text-align: right;
+    color: var(--primary-color); /* Highlight the total fare in dark mode */
+    padding-top: 10px;
+    border-top: 2px solid var(--border-color);
+}
+
+/* =========================================
+   WAITING ROOM
+   ========================================= */
+#screen-waiting-room {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#screen-waiting-room p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.timer {
+    font-size: 2.5rem !important;
+    font-weight: bold;
+    color: var(--primary-color) !important;
+    margin: 30px 0 !important;
+}
+
+/* =========================================
+   LAPTOP / DESKTOP ADAPTATION (Responsive)
+   ========================================= */
+@media (min-width: 768px) {
+    #app-container {
+        width: 650px; 
+        min-height: auto;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* Stronger shadow on black bg */
+        margin: 40px auto;
+        overflow: hidden;
+        border: 1px solid var(--border-color); /* Subtle border for laptop view */
+    }
+
+    header {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 30px;
+    }
+
+    main {
+        padding: 40px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 0;
+    }
+
+    #route-map {
+        height: 350px !important; 
+        border-radius: 8px;
+    }
+
+    button {
+        width: auto;
+        padding: 14px 40px;
+        min-width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
