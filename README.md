@@ -80,6 +80,9 @@ Instantly generates a shared Pool Code (e.g., #KCH-7F21) for matched users to id
 
 ### For Software:
 
+#### Demo video
+https://drive.google.com/file/d/1Taz5elXDUWako_BeN1ICVQJ4-SQjuEqH/view?usp=drive_link
+
 #### Screenshots (Add at least 3)
 
  destination and location
@@ -94,15 +97,8 @@ matched with co-passengers
  
 #### Diagrams
 
-**System Architecture:**
-
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
-
 **Application Workflow:**
-
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+(https://drive.google.com/file/d/1YIArmTGoP8w083Dw0FAGHINZ_yq01tDa/view?usp=drive_link)*
 
 ---
 ## License
@@ -110,4 +106,5 @@ matched with co-passengers
 This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
 
  
+
 
