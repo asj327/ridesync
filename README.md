@@ -44,9 +44,9 @@ Environmental Impact: Increased carbon footprint per passenger.
 The "Safety & Trust" Barrier: Randomly asking strangers at a station to share a ride is awkward, socially difficult, and perceived as unsafe.
 
 ### The Solution
-**RideSync acts as the Digital Coordinator. It removes the social awkwardness of "asking to share" by automating the matching process through a secure, coordinate-based algorithm.
+RideSync acts as the Digital Coordinator. It removes the social awkwardness of "asking to share" by automating the matching process through a secure, coordinate-based algorithm.
 RideSync solves this 'Last Mile' friction. By using our proximity-matching engine, we turn those 10 expensive, individual rides into 3 affordable, shared pools—saving users 60%
-on their commute while reducing the number of vehicles on Kochi's congested roads.**
+on their commute while reducing the number of vehicles on Kochi's congested roads.
 ---
 
 ## Technical Details
@@ -103,8 +103,9 @@ matched with co-passengers
 ---
 ## License
 
-This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
  
+
 
 
