@@ -108,7 +108,4 @@ Instantly generates a shared Pool Code (e.g., #KCH-7F21) for matched users to id
 
 This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
 
-**Common License Options:**
-- MIT License (Permissive, widely used)
-- Apache 2.0 (Permissive with patent grant)
-- GPL v3 (Copyleft, requires derivative works to be open source)
+ 
